@@ -4,7 +4,7 @@ import banner from '/src/app/images/banner-bg.svg'
 const Banner = () => {
   return (
     <div className="relative overflow-hidden p-28 text-center text-white">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#007165] to-[#00B5A1] opacity-60 animate-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#007165] to-[#00B5A1] opacity-80 animate-gradient"></div>
   
       <div className="absolute inset-0 w-full h-full">
         <div className="relative w-[200%] h-full animate-scroll-wave">
