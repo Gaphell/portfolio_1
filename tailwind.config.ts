@@ -8,9 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        squada: ['"Squada One"', 'sans-serif'],
+        nunito: ['"Nunito Sans"', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: '#0057FF',
       },
     },
   },
