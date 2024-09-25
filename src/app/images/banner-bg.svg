@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#00B5A1" fill-opacity="1" d="
+    M0,160
+    C360,320,1080,0,1440,160
+    V320
+    H0Z
+  "/>
+</svg>
+

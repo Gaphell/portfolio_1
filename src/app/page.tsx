@@ -6,12 +6,14 @@ import hello from './images/hello.svg'
 
 export default function Home() {
   return (
-    <div className="px-10 h-screen">
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-row justify-between items-start sticky top-0 bg-white z-10 py-4">
+    <div className="h-screen">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-row justify-between items-start sticky top-0 bg-white z-10 pt-4 pb-2 px-10">
           <div>
-            <Typography h1>Tenzin Gaphel</Typography>
-            <Typography h2>Frontend Developer</Typography>
+            <Link href={'/'}>
+              <Typography h1>Tenzin Gaphel</Typography>
+              <Typography h2>Frontend Developer</Typography>
+            </Link>
           </div>
           <div className="flex flex-row gap-8">
             <Link href={'#experience'}>

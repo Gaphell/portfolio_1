@@ -17,6 +17,15 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: '#0057FF',
       },
+      keyframes: {
+        scrollWave: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }, // Moves the container left by 50%
+        },
+      },
+      animation: {
+        'scroll-wave': 'scrollWave 10s linear infinite', // Adjust timing as needed
+      },
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({header, subHeader, points, isNda, nda = []}) => {
     return (
-      <div className="bg-white rounded-lg p-6 mb-6">
+      <div className="bg-white rounded-lg py-4 px-10 mb-6">
         {
           isNda
             ? <div>
