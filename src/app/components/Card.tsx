@@ -11,27 +11,27 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({header, subHeader, points, isNda, nda = []}) => {
     return (
-      <div className="bg-white rounded-lg py-4 px-10 mb-6">
+      <div className="bg-white shadow-sm rounded-lg py-6 px-14 mb-6">
         {
           isNda
             ? <div>
-              <Typography h3>{header}</Typography>
+              <Typography h2 className="text-primary font-medium">{header}</Typography>
               {nda.map(({duration, works}) =>
-                <div key={duration} className="py-1">
-                  <Typography h2 className="font-bold">{duration}</Typography>
+                <div key={duration} className="py-2">
+                  <Typography h3 className="font-medium text-black">{duration}</Typography>
                   <div className="list-disc space-y-1">
                     {works.map((point, index) => (
-                      <Typography h2 key={index} className="text-gray-700">{point}</Typography>
+                      <Typography key={index}>{point}</Typography>
                     ))}
                   </div>
                 </div>)}
             </div>
             : <div>
-              <Typography h3>{header}</Typography>
-              <Typography h2 className="font-bold py-1">{subHeader}</Typography>
+              <Typography h2 className="text-primary font-medium">{header}</Typography>
+              <Typography h3 className="font-medium text-black py-1">{subHeader}</Typography>
               <div className="list-disc space-y-1">
                 {points.map((point, index) => (
-                  <Typography h2 key={index} className="text-gray-700">{point}</Typography>
+                  <Typography key={index}>{point}</Typography>
                 ))}
               </div>
             </div>
